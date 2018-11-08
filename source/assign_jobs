@@ -1,0 +1,5 @@
+for ((iter = 10 ; iter <= 11 ; iter++)); do
+	export iter
+	qsub -v iter reserve_node
+	sleep 2
+done

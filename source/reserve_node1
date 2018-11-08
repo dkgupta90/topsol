@@ -1,0 +1,10 @@
+#PBS -N TopSol_rectangle
+#PBS -l nodes=1:ppn=1
+#PBS -m e
+#PBS -M deepauck@gmail.com
+#PBS -j oe
+
+cd /home/dkgupta/TopSol/topsol/topsol_front/topsol_rectangle
+
+module load matlab/2013b
+matlab -nosplash -nodesktop -singleCompThread -r    "topsol" 

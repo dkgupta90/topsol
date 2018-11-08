@@ -1,0 +1,5 @@
+for ((p = 10 ; p <= 11 ; p++)); do
+	export p
+	qsub -v p reserve_node
+	sleep 2
+done
